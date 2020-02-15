@@ -75,6 +75,7 @@ const replaceBadWords = (str)=>{
 console.log('Заміна поганих слів:');
 console.log(replaceBadWords("Are you shit fucking kidding shit cool?"));
 const divideByThree = (word) =>{
+    word = word.toLowerCase();
     let array = [], i = 3;
     do {
        array.push(word.slice(i-3, i));
